@@ -49,8 +49,9 @@ for c in days:
 
 # --- layout ----------------------------------------------------------------
 W, H = 1200, 400
-X0, Y0, PITCH, SZ = 92, 150, 16, 13
+Y0, PITCH, SZ = 150, 16, 13
 cols = max(c["col"] for c in days) + 1
+X0 = int((W - cols * PITCH) / 2) + 22
 COLORS = ["#111c2e", "#1d4e89", "#2879bd", "#3999df", "#69b8ff"]
 MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
 
@@ -112,7 +113,7 @@ text{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}
 <text x="48" y="95" fill="#3999df" font-size="13" letter-spacing="4">CONTRIBUTION CALENDAR</text>
 
 <g fill="#6f84a6" font-size="11" letter-spacing="1">{"".join(month_lbls)}</g>
-<g fill="#6f84a6" font-size="11"><text x="48" y="{Y0 + 1 * PITCH + 11}">MON</text><text x="48" y="{Y0 + 3 * PITCH + 11}">WED</text><text x="48" y="{Y0 + 5 * PITCH + 11}">FRI</text></g>
+<g fill="#6f84a6" font-size="11"><text x="{X0 - 44}" y="{Y0 + 1 * PITCH + 11}">MON</text><text x="{X0 - 44}" y="{Y0 + 3 * PITCH + 11}">WED</text><text x="{X0 - 44}" y="{Y0 + 5 * PITCH + 11}">FRI</text></g>
 
 {chr(10).join(rects)}
 
@@ -131,3 +132,37 @@ text{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}
 '''
 open(out, "w", encoding="utf-8").write(svg)
 print(f"{out}: {total} contributions, {active} active days, longest streak {longest}, best {best['count']} on {best['date']}")
+
+# --- keep hero.svg stats (repos / stars / contributions / followers) in sync ---
+import json
+import os
+
+hero = sys.argv[3] if len(sys.argv) > 3 else "hero.svg"
+
+
+def _api(path):
+    headers = {"User-Agent": "calendar-generator", "Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    req = urllib.request.Request("https://api.github.com" + path, headers=headers)
+    return json.load(urllib.request.urlopen(req, timeout=30))
+
+
+if os.path.exists(hero):
+    try:
+        info = _api(f"/users/{user}")
+        repos = _api(f"/users/{user}/repos?per_page=100&type=owner")
+        vals = {
+            "s-repos": info["public_repos"],
+            "s-stars": sum(r.get("stargazers_count", 0) for r in repos),
+            "s-contrib": total,
+            "s-followers": info["followers"],
+        }
+        text = open(hero, encoding="utf-8").read()
+        for key, val in vals.items():
+            text = re.sub(rf'(<text id="{key}"[^>]*>)[^<]*(</text>)', rf"\g<1>{val}\g<2>", text)
+        open(hero, "w", encoding="utf-8").write(text)
+        print("hero stats:", vals)
+    except Exception as exc:  # never fail the whole run because of stats
+        print("hero stats skipped:", exc)

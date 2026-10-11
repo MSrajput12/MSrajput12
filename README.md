@@ -2,16 +2,19 @@
 
 <img src="hero.svg" alt="Manish Rajput - animated GitHub profile banner" width="100%" />
 
-<p><strong>Developer · Builder · Tech Enthusiast</strong></p>
+<img src="about.svg" alt="About Manish Rajput" width="100%" />
 
-<p>Building useful things and sharing the work in public.</p>
+<img src="stack.svg" alt="Tech stack: Python, Swift, Java" width="100%" />
 
-</div>
+<img src="header-projects.svg" alt="Selected projects" width="100%" />
 
-## Open-source signal
-
-<div align="center">
+<a href="https://github.com/MSrajput12/MaRKLiveWallpaper"><img src="cards/MaRKLiveWallpaper.svg" alt="MaRKLiveWallpaper" width="49%" /></a>
+<a href="https://github.com/MSrajput12/DSA"><img src="cards/DSA.svg" alt="DSA" width="49%" /></a>
+<a href="https://github.com/MSrajput12/openEnv"><img src="cards/openEnv.svg" alt="openEnv" width="49%" /></a>
+<a href="https://github.com/MSrajput12/MSrajput12"><img src="cards/MSrajput12.svg" alt="MSrajput12" width="49%" /></a>
 
 <img src="contributions.svg" alt="Manish Rajput GitHub contribution calendar" width="100%" />
+
+<img src="footer.svg" alt="Thanks for stopping by" width="100%" />
 
 </div>
