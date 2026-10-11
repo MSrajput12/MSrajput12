@@ -1,0 +1,63 @@
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse">
+      <path d="M35 0H0V35" fill="none" stroke="#172236"/>
+    </pattern>
+    <linearGradient id="ring">
+      <stop stop-color="#328bd0"/>
+      <stop offset="1" stop-color="#8271c7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="500" rx="22" fill="#080d18"/>
+  <rect width="1200" height="500" rx="22" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="498" rx="21" fill="none" stroke="#263752"/>
+
+  <g font-family="monospace" fill="#96aacb">
+    <text x="48" y="48" font-size="15" letter-spacing="4">MANISH / LIVING IDENTITY</text>
+    <text x="1150" y="48" font-size="15" text-anchor="end">@msrajput12</text>
+  </g>
+
+  <text x="50" y="115" fill="#3999df" font-family="monospace" font-size="15" letter-spacing="5">HELLO, WORLD. I'M</text>
+
+  <g fill="#edf3ff" font-family="monospace" font-size="76" font-weight="bold">
+    <text x="48" y="200">Manish</text>
+    <text x="48" y="280">Rajput</text>
+  </g>
+
+  <text x="50" y="335" fill="#e5edfc" font-family="monospace" font-size="22">Python / Swift / Java</text>
+  <text x="50" y="370" fill="#91a5c5" font-family="monospace" font-size="15">Building useful things on the public internet</text>
+
+  <circle cx="920" cy="240" r="170" fill="#0c1424" stroke="#1d304b"/>
+  <circle cx="920" cy="240" r="153" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="220 35 90 35"/>
+  <circle cx="920" cy="240" r="125" fill="none" stroke="#243650" stroke-dasharray="3 9"/>
+
+  <g fill="#7296c2" font-family="monospace" font-size="15" text-anchor="middle">
+    <text x="920" y="175">0100101</text>
+    <text x="920" y="200">1011010</text>
+    <text x="920" y="225">0110101</text>
+    <text x="920" y="250">1100101</text>
+    <text x="920" y="275">0101101</text>
+    <text x="920" y="300">1010100</text>
+    <text x="920" y="325">0110101</text>
+  </g>
+
+  <line x1="48" y1="420" x2="1152" y2="420" stroke="#29364b"/>
+
+  <g font-family="monospace">
+    <g fill="#96aacb" font-size="13">
+      <text x="50" y="450">REPOSITORIES</text>
+      <text x="330" y="450">STARS</text>
+      <text x="610" y="450">CONTRIBUTIONS</text>
+      <text x="910" y="450">FOLLOWERS</text>
+    </g>
+    <g fill="#edf3ff" font-size="27">
+      <text x="50" y="483">4</text>
+      <text x="330" y="483">0</text>
+      <text x="610" y="483">24</text>
+      <text x="910" y="483">3</text>
+    </g>
+  </g>
+</svg>
+```
