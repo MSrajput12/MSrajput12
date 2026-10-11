@@ -1,4 +1,3 @@
-```html
 <div align="center">
 
 <picture>
@@ -22,4 +21,3 @@
 </p>
 
 </div>
-```
