@@ -7,3 +7,11 @@
 <p>Building useful things and sharing the work in public.</p>
 
 </div>
+
+## Open-source signal
+
+<div align="center">
+
+<img src="contributions.svg" alt="Manish Rajput GitHub contribution calendar" width="100%" />
+
+</div>
