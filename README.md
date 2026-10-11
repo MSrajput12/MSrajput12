@@ -1,27 +1,91 @@
-# 💫 About Me:
-🔭 I’m interested in building **AI based real-world projects**<br><br>👯 I’m looking to collaborate on **AI Projects and Innovative Tech Ideas**<br><br>🤝 I’m looking for help with **Learning Blockchain Development**<br><br>🌱 I’m currently learning **Artificial Intelligence and Modern Web Technologies**<br><br>💬 Ask me about **AI tools, building projects with AI, and technology**<br><br>⚡ Fun fact **I enjoy testing games and exploring new technologies**
+<div align="center">
 
+<p><code>msrajput12@github ~ $ ./maintainer.sh</code></p>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/_the_manish_rajput_) 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/system-scan?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-system-scan-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/system-scan?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-system-scan-1&mode=dark" width="860" alt="Manish Rajput animated maintainer system scan" />
+</picture>
+</p>
+</div>
 
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=MSrajput12&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=MSrajput12&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=MSrajput12&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<h2>Why I build in public</h2>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=MSrajput12&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+<table width="100%">
+<tr>
+<td width="33%" valign="top"><h3>Focus</h3><p><code>Python</code> · <code>Swift</code> · <code>Java</code></p></td>
+<td width="33%" valign="top"><h3>Proof</h3><p>4 public repositories · 0 stars</p></td>
+<td width="33%" valign="top"><h3>Contribution</h3><p>24 contributions · 4 active days</p></td>
+</tr>
+</table>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<p>Building in public, documenting the work, and making the next contribution easier.</p>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=MSrajput12&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<h2>Open-source toolbox</h2>
 
----
-[![](https://visitcount.itsvg.in/api?id=MSrajput12&icon=2&color=0)](https://visitcount.itsvg.in)
+<p><code>msrajput12@github ~ $ toolbox --list</code></p>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-stack-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stack?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-stack-1&mode=dark" width="100%" alt="Manish Rajput open-source technology toolbox" />
+</picture>
+</p>
+
+<table width="100%">
+<tr>
+<td width="25%" align="center"><strong>Python</strong><br /><sub>49%</sub></td>
+<td width="25%" align="center"><strong>Swift</strong><br /><sub>38%</sub></td>
+<td width="25%" align="center"><strong>Java</strong><br /><sub>12%</sub></td>
+<td width="25%" align="center"><strong>Dockerfile</strong><br /><sub>1%</sub></td>
+</tr>
+</table>
+
+<h2>Repositories worth exploring</h2>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&repos=msrajput12%2FopenEnv%2Cmsrajput12%2FMSrajput12%2Cmsrajput12%2FDSA%2Cmsrajput12%2FMaRKLiveWallpaper&v=oss-projects-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/projects?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&repos=msrajput12%2FopenEnv%2Cmsrajput12%2FMSrajput12%2Cmsrajput12%2FDSA%2Cmsrajput12%2FMaRKLiveWallpaper&v=oss-projects-1&mode=dark" width="860" alt="Manish Rajput maintainer repositories" />
+</picture>
+</p>
+
+<table width="100%">
+<tr>
+<td width="25%" valign="top"><h3><a href="https://github.com/MSrajput12/MSrajput12">MSrajput12</a></h3><p>A public project looking for its next contributor.</p><p><sub>Open source · ⭐ 0</sub></p></td>
+<td width="25%" valign="top"><h3><a href="https://github.com/MSrajput12/DSA">DSA</a></h3><p>DSA problems</p><p><sub>Java · ⭐ 0</sub></p></td>
+<td width="25%" valign="top"><h3><a href="https://github.com/MSrajput12/MaRKLiveWallpaper">MaRKLiveWallpaper</a></h3><p>A public project looking for its next contributor.</p><p><sub>Swift · ⭐ 0</sub></p></td>
+</tr>
+</table>
+
+<h2>Contribution activity</h2>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-stats-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/stats?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&style=terminal&v=oss-stats-1&mode=dark" width="100%" alt="Manish Rajput open-source signal" />
+</picture>
+</p>
+
+<h2>Contribution trail</h2>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&v=oss-heatmap-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/heatmap?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&v=oss-heatmap-1&mode=dark" width="100%" alt="Manish Rajput contribution trail" />
+</picture>
+</p>
+
+<hr />
+
+<h2>Contribute together</h2>
+
+<p>If the work is useful, open an issue, improve the docs, share a project, or start a conversation.</p>
+
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&v=oss-social-1&mode=light" />
+  <img src="https://www.gitskins.com/api/section/social?username=msrajput12&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F106289857%3Fu%3Df0518ef3721346eebb45cf4596da59c873f766d3%26v%3D4&v=oss-social-1&mode=dark" width="100%" alt="Manish Rajput community links" />
+</picture></p>
+<p align="center"><a href="https://github.com/msrajput12">GitHub</a></p>
+<p align="center"><sub>Manish Rajput · open-source profile generated with <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
