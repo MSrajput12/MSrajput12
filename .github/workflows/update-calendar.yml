@@ -1,9 +1,9 @@
-name: Update contribution calendar
+name: Update profile data
 
 on:
   schedule:
     - cron: "0 */12 * * *"   # every 12 hours
-  workflow_dispatch:         # manual run button
+  workflow_dispatch:         # manual "Run workflow" button
 
 permissions:
   contents: write
@@ -18,12 +18,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate calendar
-        run: python scripts/gen_calendar.py msrajput12 contributions.svg
+      - name: Generate calendar + hero stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}   # optional: includes private contributions
+        run: python scripts/gen_calendar.py msrajput12 contributions.svg hero.svg
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add contributions.svg
-          git diff --cached --quiet || (git commit -m "Update contribution calendar" && git push)
+          git add contributions.svg hero.svg
+          git diff --cached --quiet || (git commit -m "Update contribution calendar and hero stats" && git push)
