@@ -167,7 +167,7 @@ text{font-family:ui-monospace,Menlo,Consolas,monospace}
 <line x1="48" y1="520" x2="1152" y2="520" stroke="#29364b"/>
 <g class="f" style="animation-delay:1.7s">
 <g fill="#94a8c7" font-size="13" letter-spacing="2"><text x="50" y="560">REPOSITORIES</text><text x="330" y="560">STARS</text><text x="610" y="560">CONTRIBUTIONS</text><text x="910" y="560">FOLLOWERS</text></g>
-<g fill="#e8efff" font-size="35"><text id="s-repos" x="50" y="605">4</text><text id="s-stars" x="330" y="605">0</text><text id="s-contrib" x="610" y="605">36</text><text id="s-followers" x="910" y="605">3</text></g>
+<g fill="#e8efff" font-size="35"><text id="s-repos" x="50" y="605">4</text><text id="s-stars" x="330" y="605">0</text><text id="s-contrib" x="610" y="605">38</text><text id="s-followers" x="910" y="605">3</text></g>
 </g>
 <g fill="#3999df"><circle class="p" cx="285" cy="555" r="3.5"/><circle class="p" style="animation-delay:.6s" cx="565" cy="555" r="3.5"/><circle class="p" style="animation-delay:1.2s" cx="865" cy="555" r="3.5"/><circle class="p" style="animation-delay:1.8s" cx="1150" cy="555" r="3.5"/></g>
 </svg>
