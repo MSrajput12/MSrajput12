@@ -1,80 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-label="Manish Rajput GitHub profile banner">
-  <defs>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" fill="none" stroke="#172236" stroke-width="1"/>
-    </pattern>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2879bd"/>
-      <stop offset="100%" stop-color="#7668bd"/>
-    </linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f0f5ff"/>
-      <stop offset="100%" stop-color="#9eb8df"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="1200" height="660" rx="26" fill="#080d18"/>
-  <rect width="1200" height="660" rx="26" fill="url(#grid)"/>
-  <rect x="1" y="1" width="1198" height="658" rx="25" fill="none" stroke="#24344c"/>
-
-  <g font-family="monospace" fill="#93a8c9">
-    <text x="48" y="55" font-size="15" letter-spacing="4">MANISH / LIVING IDENTITY</text>
-    <text x="1150" y="55" font-size="15" text-anchor="end">@msrajput12</text>
-  </g>
-
-  <text x="50" y="145" fill="#3999df" font-family="monospace" font-size="16" letter-spacing="5">HELLO, WORLD. I'M</text>
-
-  <g font-family="monospace" font-weight="bold" font-size="83" fill="url(#name)">
-    <text x="48" y="245">Manish</text>
-    <text x="48" y="335">Rajput</text>
-  </g>
-
-  <text x="50" y="405" fill="#e5edfc" font-family="monospace" font-size="23">Python / Swift / Java</text>
-  <text x="50" y="443" fill="#91a5c5" font-family="monospace" font-size="16">Building useful things on the public internet</text>
-
-  <circle cx="930" cy="285" r="210" fill="#0c1424" stroke="#1d304b"/>
-  <circle cx="930" cy="285" r="194" fill="none" stroke="url(#ring)" stroke-width="1.5" stroke-dasharray="250 35 90 40"/>
-  <circle cx="930" cy="285" r="165" fill="none" stroke="#213650" stroke-width="1" stroke-dasharray="2 10"/>
-
-  <g fill="#7192bd" font-family="monospace" font-size="13" text-anchor="middle">
-    <text x="930" y="200">010010</text>
-    <text x="900" y="220">10110110</text>
-    <text x="955" y="220">11001</text>
-    <text x="875" y="242">0110101</text>
-    <text x="947" y="242">101100</text>
-    <text x="930" y="264">01110101</text>
-    <text x="895" y="286">101010</text>
-    <text x="960" y="286">011011</text>
-    <text x="930" y="308">11001010</text>
-    <text x="902" y="330">010110</text>
-    <text x="950" y="330">101101</text>
-    <text x="930" y="352">01101001</text>
-    <text x="912" y="374">101010</text>
-  </g>
-
-  <circle cx="930" cy="285" r="4" fill="#69b8ff"/>
-  <circle cx="930" cy="285" r="11" fill="none" stroke="#69b8ff" opacity=".5"/>
-
-  <line x1="48" y1="520" x2="1152" y2="520" stroke="#29364b" stroke-width="1"/>
-
-  <g font-family="monospace">
-    <g fill="#94a8c7" font-size="13" letter-spacing="2">
-      <text x="50" y="560">REPOSITORIES</text>
-      <text x="330" y="560">STARS</text>
-      <text x="610" y="560">CONTRIBUTIONS</text>
-      <text x="910" y="560">FOLLOWERS</text>
-    </g>
-    <g fill="#e8efff" font-size="35">
-      <text x="50" y="605">4</text>
-      <text x="330" y="605">0</text>
-      <text x="610" y="605">24</text>
-      <text x="910" y="605">3</text>
-    </g>
-    <g fill="#3999df">
-      <circle cx="285" cy="555" r="3.5"/>
-      <circle cx="565" cy="555" r="3.5"/>
-      <circle cx="865" cy="555" r="3.5"/>
-      <circle cx="1150" cy="555" r="3.5"/>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5NDE3OTg0OC0wYTlkLTRjYTgtYjI0Mi1jZmJkNTM3OTRlMzMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaDdTECdy5tGsYvUstTymZtwAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmMDgwODQyMy00NzJiLTQ4MTUtYjJkNS1kY2ZjODgxOWI0MTdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoynpMfP3Nuw3VorVm2kQTQwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggC9tiCc9rA7gQLtzqQsxHk9eW5hL8Sq2tX8nesgErCi6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaEuf+eQeVPW2tsZz+SlYoaIAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCB2cj0FsvjXaCSkTJE6oiKVXCvtTvqPrtiBknwsu6R3jGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBiYZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk0MTc5ODQ4LTBhOWQtNGNhOC1iMjQyLWNmYmQ1Mzc5NGUzMy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjBjNzg0MjdmLWY2NzgtNGEzZi04NTZhLTExYWY3YjUwNmEwYnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAL22IJz2sDuBAu3OpCzEeT15bmEvxKra1fyd6yASsKLqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggt8HSbnfOen6kZdjYZi7l9qnMjs9GzKUfX5kC6Fiff9GiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggKBbdp4N/2W+p2zlTug+DmsYLjkBmoI+/auAyzlCq91V0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQBv58v20KJRoUQpKU55biNGL4/wFdLp49DBVEOv+kAsfnxZa8Q8EO3NlEswFCFuLdVbSrw1K7qJ0LhMJ3ePA8OQ=</c2pa:manifest></metadata>
+<defs>
+<pattern id="g" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#172236"/></pattern>
+<linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2879bd"/><stop offset="1" stop-color="#7668bd"/></linearGradient>
+<linearGradient id="n" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="420" y2="0"><stop offset="0" stop-color="#9eb8df"/><stop offset=".45" stop-color="#fff"/><stop offset="1" stop-color="#9eb8df"/><animateTransform attributeName="gradientTransform" type="translate" values="-420 0;420 0" dur="4.5s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3999df" stop-opacity="0"/><stop offset=".5" stop-color="#3999df" stop-opacity=".22"/><stop offset="1" stop-color="#3999df" stop-opacity="0"/></linearGradient>
+<radialGradient id="o"><stop offset="0" stop-color="#2879bd" stop-opacity=".35"/><stop offset="1" stop-color="#2879bd" stop-opacity="0"/></radialGradient>
+<clipPath id="k"><rect x="50" y="380" height="40" width="0"><animate attributeName="width" values="0;330;330;0;0" keyTimes="0;.3;.8;.92;1" dur="9s" repeatCount="indefinite"/></rect></clipPath>
+<clipPath id="c"><rect width="1200" height="660" rx="26"/></clipPath>
+</defs>
+<style>
+text{font-family:ui-monospace,Menlo,Consolas,monospace}
+.t{font-size:13px;opacity:.2;animation:tw 3.2s ease-in-out infinite}
+.a{font-size:9.6px;text-anchor:middle;animation:br 4s ease-in-out infinite}
+.l1{fill:#35507a}.l2{fill:#58739c}.l3{fill:#a8c1e6}.l4{fill:#e6eefc}
+@keyframes br{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+.d0{animation-delay:0.00s}
+.d1{animation-delay:0.45s}
+.d2{animation-delay:0.90s}
+.d3{animation-delay:1.35s}
+.d4{animation-delay:1.80s}
+.d5{animation-delay:2.25s}
+.d6{animation-delay:2.70s}
+.d7{animation-delay:3.15s}
+.f{opacity:0;animation:fu .9s ease-out forwards}
+@keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.p{animation:pl 2.4s ease-in-out infinite}
+@keyframes pl{0%,100%{opacity:.35}50%{opacity:1}}
+</style>
+<g clip-path="url(#c)">
+<rect width="1200" height="660" fill="#080d18"/><rect width="1200" height="660" fill="url(#g)"/>
+<rect y="-80" width="1200" height="80" fill="url(#s)"><animate attributeName="y" values="-80;660" dur="7s" repeatCount="indefinite"/></rect>
+<circle cx="930" cy="285" r="280" fill="url(#o)"><animate attributeName="r" values="250;300;250" dur="5s" repeatCount="indefinite"/></circle>
+</g>
+<rect x="1" y="1" width="1198" height="658" rx="25" fill="none" stroke="#24344c"/>
+<g fill="#93a8c9" font-size="15"><text x="48" y="55" letter-spacing="4">MANISH / LIVING IDENTITY</text><text x="1150" y="55" text-anchor="end">@msrajput12</text></g>
+<circle cx="1170" cy="50" r="4" fill="#3ddc97" class="p"/>
+<text class="f" style="animation-delay:.2s" x="50" y="145" fill="#3999df" font-size="16" letter-spacing="5">HELLO, WORLD. I'M</text>
+<g font-weight="bold" font-size="83" fill="url(#n)"><text class="f" style="animation-delay:.5s" x="48" y="245">Manish</text><text class="f" style="animation-delay:.9s" x="48" y="335">Rajput</text></g>
+<g clip-path="url(#k)"><text x="50" y="405" fill="#e5edfc" font-size="23">Python / Swift / Java</text></g>
+<rect y="386" width="3" height="24" fill="#69b8ff"><animate attributeName="x" values="50;380;380;50;50" keyTimes="0;.3;.8;.92;1" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+<text class="f" style="animation-delay:1.4s" x="50" y="443" fill="#91a5c5" font-size="16">Building useful things on the public internet</text>
+<circle cx="930" cy="285" r="210" fill="#0c1424" fill-opacity=".85" stroke="#1d304b"/>
+<g><animateTransform attributeName="transform" type="rotate" from="0 930 285" to="360 930 285" dur="28s" repeatCount="indefinite"/><circle cx="930" cy="285" r="194" fill="none" stroke="url(#r)" stroke-width="1.5" stroke-dasharray="250 35 90 40"/><circle cx="930" cy="91" r="5" fill="#69b8ff"/></g>
+<g><animateTransform attributeName="transform" type="rotate" from="360 930 285" to="0 930 285" dur="45s" repeatCount="indefinite"/><circle cx="930" cy="285" r="170" fill="none" stroke="#213650" stroke-dasharray="2 10"/><circle cx="1100" cy="285" r="3.5" fill="#8271c7"/></g>
+<g>
+  <text class="a l1 d0" y="118.0" x="898.1 903.9 909.7 915.5 921.3 927.1 944.5 950.3">........</text>
+  <text class="a l1 d0" y="126.4" x="898.1 903.9 915.5 932.9 938.7 944.5 950.3 956.1 961.9 967.7">..........</text>
+  <text class="a l1 d0" y="134.7" x="898.1 967.7 973.5 979.3 985.1 990.9">......</text>
+  <text class="a l1 d0" y="143.1" x="985.1 990.9">..</text>
+  <text class="a l1 d0" y="151.4" x="979.3 985.1 990.9 996.7 1002.5 1008.3 1014.1">.......</text>
+  <text class="a l1 d1" y="159.8" x="996.7 1002.5 1008.3 1014.1 1019.9 1025.7">......</text>
+  <text class="a l1 d1" y="168.1" x="1019.9 1025.7 1031.5">...</text>
+  <text class="a l1 d1" y="176.5" x="1031.5 1037.3">..</text>
+  <text class="a l1 d1" y="184.8" x="787.9 1037.3">..</text>
+  <text class="a l1 d1" y="193.2" x="909.7 915.5 921.3 927.1 932.9 938.7 944.5 950.3 1037.3 1043.1">..........</text>
+  <text class="a l1 d2" y="201.5" x="898.1 903.9 973.5">...</text>
+  <text class="a l2 d2" y="201.5" x="909.7 961.9 967.7">:::</text>
+  <text class="a l3 d2" y="201.5" x="915.5 921.3 956.1">+++</text>
+  <text class="a l4 d2" y="201.5" x="927.1 932.9 938.7 944.5 950.3">#####</text>
+  <text class="a l1 d2" y="209.8" x="892.3 898.1 990.9 1037.3 1043.1">.....</text>
+  <text class="a l2 d2" y="209.8" x="903.9 909.7 985.1">:::</text>
+  <text class="a l3 d2" y="209.8" x="915.5 921.3 979.3">+++</text>
+  <text class="a l4 d2" y="209.8" x="927.1 932.9 938.7 944.5 950.3 956.1 961.9 967.7 973.5">#########</text>
+  <text class="a l1 d2" y="218.2" x="892.3 898.1 1002.5">...</text>
+  <text class="a l2 d2" y="218.2" x="903.9 909.7">::</text>
+  <text class="a l3 d2" y="218.2" x="915.5 921.3 996.7">+++</text>
+  <text class="a l4 d2" y="218.2" x="927.1 932.9 938.7 944.5 950.3 956.1 961.9 967.7 973.5 979.3 985.1 990.9">############</text>
+  <text class="a l1 d2" y="226.5" x="898.1 903.9 1008.3">...</text>
+  <text class="a l2 d2" y="226.5" x="909.7 915.5">::</text>
+  <text class="a l3 d2" y="226.5" x="921.3 927.1">++</text>
+  <text class="a l4 d2" y="226.5" x="932.9 938.7 944.5 950.3 956.1 961.9 967.7 973.5 979.3 985.1 990.9 996.7 1002.5">#############</text>
+  <text class="a l1 d2" y="234.9" x="898.1 903.9">..</text>
+  <text class="a l2 d2" y="234.9" x="909.7 915.5">::</text>
+  <text class="a l3 d2" y="234.9" x="921.3 927.1 1008.3">+++</text>
+  <text class="a l4 d2" y="234.9" x="932.9 938.7 944.5 950.3 956.1 961.9 967.7 973.5 979.3 985.1 990.9 996.7 1002.5">#############</text>
+  <text class="a l1 d2" y="243.2" x="898.1 903.9 909.7 915.5">....</text>
+  <text class="a l2 d2" y="243.2" x="921.3 927.1 932.9 1014.1">::::</text>
+  <text class="a l3 d2" y="243.2" x="938.7 944.5 950.3">+++</text>
+  <text class="a l4 d2" y="243.2" x="956.1 961.9 967.7 973.5 979.3 985.1 990.9 996.7 1002.5 1008.3">##########</text>
+  <text class="a l1 d3" y="251.6" x="932.9 938.7 944.5 950.3 956.1">.....</text>
+  <text class="a l2 d3" y="251.6" x="961.9">:</text>
+  <text class="a l3 d3" y="251.6" x="967.7 1014.1">++</text>
+  <text class="a l4 d3" y="251.6" x="973.5 979.3 985.1 990.9 996.7 1002.5 1008.3">#######</text>
+  <text class="a l1 d3" y="259.9" x="967.7 973.5 1019.9">...</text>
+  <text class="a l3 d3" y="259.9" x="979.3 990.9 996.7 1002.5">++++</text>
+  <text class="a l4 d3" y="259.9" x="985.1 1008.3 1014.1">###</text>
+  <text class="a l1 d3" y="268.3" x="973.5 990.9 996.7 1002.5 1008.3 1014.1 1019.9">.......</text>
+  <text class="a l2 d3" y="268.3" x="979.3 985.1">::</text>
+  <text class="a l1 d3" y="276.7" x="915.5 921.3 932.9">...</text>
+  <text class="a l2 d3" y="276.7" x="927.1 973.5">::</text>
+  <text class="a l3 d3" y="276.7" x="985.1">+</text>
+  <text class="a l4 d3" y="276.7" x="979.3">#</text>
+  <text class="a l1 d3" y="285.0" x="909.7 967.7 1014.1 1019.9">....</text>
+  <text class="a l2 d3" y="285.0" x="915.5 927.1 932.9 990.9">::::</text>
+  <text class="a l3 d3" y="285.0" x="921.3 973.5">++</text>
+  <text class="a l4 d3" y="285.0" x="979.3 985.1">##</text>
+  <text class="a l1 d4" y="293.4" x="869.1 874.9 880.7 886.5 892.3 898.1 903.9 909.7 950.3 961.9 967.7 973.5 1014.1">.............</text>
+  <text class="a l2 d4" y="293.4" x="915.5 921.3 944.5 956.1 979.3 996.7 1002.5 1008.3 1019.9">:::::::::</text>
+  <text class="a l3 d4" y="293.4" x="927.1">+</text>
+  <text class="a l4 d4" y="293.4" x="932.9 938.7 985.1 990.9">####</text>
+  <text class="a l1 d4" y="301.7" x="863.3 869.1 967.7 973.5 979.3 1014.1 1019.9">.......</text>
+  <text class="a l2 d4" y="301.7" x="874.9 880.7 886.5 892.3 898.1 903.9 956.1 961.9">::::::::</text>
+  <text class="a l3 d4" y="301.7" x="909.7 915.5 944.5 950.3 985.1">+++++</text>
+  <text class="a l4 d4" y="301.7" x="921.3 927.1 932.9 938.7 990.9 996.7 1002.5">#######</text>
+  <text class="a l1 d4" y="310.1" x="869.1 961.9 967.7 973.5 979.3">.....</text>
+  <text class="a l2 d4" y="310.1" x="874.9 880.7 956.1 985.1 1014.1">:::::</text>
+  <text class="a l3 d4" y="310.1" x="886.5 892.3 944.5 950.3 1008.3">+++++</text>
+  <text class="a l4 d4" y="310.1" x="898.1 903.9 909.7 915.5 921.3 927.1 932.9 938.7 990.9 996.7 1002.5">###########</text>
+  <text class="a l1 d4" y="318.4" x="874.9 956.1 961.9 973.5 979.3">.....</text>
+  <text class="a l2 d4" y="318.4" x="880.7 886.5 950.3 967.7 985.1">:::::</text>
+  <text class="a l3 d4" y="318.4" x="892.3 990.9 1014.1">+++</text>
+  <text class="a l4 d4" y="318.4" x="898.1 903.9 909.7 915.5 921.3 927.1 932.9 938.7 944.5 996.7 1002.5 1008.3">############</text>
+  <text class="a l1 d4" y="326.8" x="880.7 950.3 961.9 967.7">....</text>
+  <text class="a l2 d4" y="326.8" x="886.5 892.3 996.7">:::</text>
+  <text class="a l3 d4" y="326.8" x="898.1 903.9">++</text>
+  <text class="a l4 d4" y="326.8" x="909.7 915.5 921.3 927.1 932.9 938.7 944.5 1002.5 1008.3 1014.1">##########</text>
+  <text class="a l1 d4" y="335.1" x="880.7 886.5 996.7 1002.5">....</text>
+  <text class="a l2 d4" y="335.1" x="892.3 898.1 944.5 1019.9">::::</text>
+  <text class="a l3 d4" y="335.1" x="903.9 909.7 1008.3">+++</text>
+  <text class="a l4 d4" y="335.1" x="915.5 921.3 927.1 932.9 938.7 1014.1">######</text>
+  <text class="a l1 d5" y="343.5" x="886.5 892.3 944.5 985.1">....</text>
+  <text class="a l2 d5" y="343.5" x="898.1 903.9 990.9 996.7 1002.5">:::::</text>
+  <text class="a l3 d5" y="343.5" x="909.7 915.5 938.7">+++</text>
+  <text class="a l4 d5" y="343.5" x="921.3 927.1 932.9 1008.3 1014.1 1019.9">######</text>
+  <text class="a l1 d5" y="351.8" x="892.3 898.1 956.1 979.3">....</text>
+  <text class="a l2 d5" y="351.8" x="903.9 909.7 944.5 950.3 985.1 990.9 996.7">:::::::</text>
+  <text class="a l3 d5" y="351.8" x="915.5 921.3 938.7">+++</text>
+  <text class="a l4 d5" y="351.8" x="927.1 932.9 1002.5 1008.3 1014.1 1019.9">######</text>
+  <text class="a l1 d5" y="360.2" x="892.3 898.1 903.9 938.7 944.5 950.3 973.5 1002.5">........</text>
+  <text class="a l2 d5" y="360.2" x="909.7 915.5 927.1 932.9 990.9 996.7">::::::</text>
+  <text class="a l3 d5" y="360.2" x="921.3 979.3 985.1 1019.9">++++</text>
+  <text class="a l4 d5" y="360.2" x="1008.3 1014.1">##</text>
+  <text class="a l1 d5" y="368.5" x="898.1 903.9 909.7 915.5 921.3 927.1 932.9 938.7 944.5 950.3 961.9 967.7 973.5 979.3">..............</text>
+  <text class="a l2 d5" y="368.5" x="985.1 1008.3 1019.9">:::</text>
+  <text class="a l3 d5" y="368.5" x="996.7 1002.5">++</text>
+  <text class="a l4 d5" y="368.5" x="990.9 1014.1">##</text>
+  <text class="a l1 d5" y="376.9" x="903.9 909.7 944.5 956.1 961.9 996.7 1019.9">.......</text>
+  <text class="a l2 d5" y="376.9" x="967.7 985.1 990.9 1002.5 1008.3">:::::</text>
+  <text class="a l3 d5" y="376.9" x="973.5 979.3 1014.1">+++</text>
+  <text class="a l1 d6" y="385.2" x="782.1 921.3 927.1 1014.1">....</text>
+  <text class="a l2 d6" y="385.2" x="932.9 938.7 944.5 950.3 956.1 961.9 1002.5 1008.3">::::::::</text>
+  <text class="a l3 d6" y="385.2" x="967.7">+</text>
+  <text class="a l4 d6" y="385.2" x="973.5 979.3 985.1 990.9 996.7">#####</text>
+  <text class="a l1 d6" y="393.6" x="921.3 927.1 961.9 967.7 973.5 979.3 985.1 1014.1">........</text>
+  <text class="a l2 d6" y="393.6" x="932.9 938.7 944.5 950.3 956.1 990.9 1008.3">:::::::</text>
+  <text class="a l3 d6" y="393.6" x="996.7">+</text>
+  <text class="a l4 d6" y="393.6" x="1002.5">#</text>
+  <text class="a l1 d6" y="401.9" x="915.5 921.3 927.1 932.9 938.7 944.5 973.5 979.3 985.1 990.9 996.7">...........</text>
+  <text class="a l2 d6" y="401.9" x="950.3 956.1 961.9 967.7 1014.1">:::::</text>
+  <text class="a l3 d6" y="401.9" x="1008.3">+</text>
+  <text class="a l4 d6" y="401.9" x="1002.5">#</text>
+  <text class="a l1 d6" y="410.2" x="921.3 927.1 932.9 938.7 973.5 1014.1">......</text>
+  <text class="a l2 d6" y="410.2" x="944.5 979.3 985.1">:::</text>
+  <text class="a l3 d6" y="410.2" x="950.3 956.1 967.7 990.9 996.7 1008.3">++++++</text>
+  <text class="a l4 d6" y="410.2" x="961.9 1002.5">##</text>
+  <text class="a l1 d6" y="418.6" x="927.1 932.9 938.7 973.5">....</text>
+  <text class="a l2 d6" y="418.6" x="944.5 950.3 956.1 961.9 967.7 979.3 985.1">:::::::</text>
+  <text class="a l3 d6" y="418.6" x="990.9 1008.3">++</text>
+  <text class="a l4 d6" y="418.6" x="996.7 1002.5">##</text>
+  <text class="a l1 d6" y="427.0" x="944.5 950.3 956.1 961.9 967.7 973.5 979.3">.......</text>
+  <text class="a l2 d6" y="427.0" x="985.1 990.9 996.7 1002.5 1008.3">:::::</text>
+  <text class="a l1 d7" y="435.3" x="985.1 990.9 996.7 1002.5 1008.3">.....</text>
+  <text class="a l1 d7" y="443.7" x="1002.5">.</text>
+</g>
+<line x1="48" y1="520" x2="1152" y2="520" stroke="#29364b"/>
+<g class="f" style="animation-delay:1.7s">
+<g fill="#94a8c7" font-size="13" letter-spacing="2"><text x="50" y="560">REPOSITORIES</text><text x="330" y="560">STARS</text><text x="610" y="560">CONTRIBUTIONS</text><text x="910" y="560">FOLLOWERS</text></g>
+<g fill="#e8efff" font-size="35"><text x="50" y="605">4</text><text x="330" y="605">0</text><text x="610" y="605">24</text><text x="910" y="605">3</text></g>
+</g>
+<g fill="#3999df"><circle class="p" cx="285" cy="555" r="3.5"/><circle class="p" style="animation-delay:.6s" cx="565" cy="555" r="3.5"/><circle class="p" style="animation-delay:1.2s" cx="865" cy="555" r="3.5"/><circle class="p" style="animation-delay:1.8s" cx="1150" cy="555" r="3.5"/></g>
 </svg>
