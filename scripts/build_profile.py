@@ -24,7 +24,8 @@ API_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip() or TOKEN
 FIXTURE = os.environ.get("PROFILE_FIXTURE", "")
 
 # ---- tweakables --------------------------------------------------------------
-PALETTE = "blue"                       # calendar colours: "blue" or "github"
+COLORFUL_LANGUAGES = False             # True = GitHub brand colours for language dots/bars
+PALETTE = "mono"                       # calendar colours: "mono" (black theme) or "github" (green)
 FALLBACK_BIO = "Build useful things. Share the work in public."
 MAX_PROJECTS = 6
 FACE_BOX = (0.164, 0.03, 0.735, 0.77)  # (left, top, right, bottom) of the avatar used for the ASCII face
@@ -34,6 +35,9 @@ LANG_COLORS = {"Python": "#3572A5", "Swift": "#F05138", "Java": "#b07219", "Java
                "TypeScript": "#3178c6", "C++": "#f34b7d", "C": "#8a8a8a", "C#": "#178600", "Go": "#00ADD8",
                "Rust": "#dea584", "Kotlin": "#A97BFF", "HTML": "#e34c26", "CSS": "#663399",
                "Shell": "#89e051", "Dart": "#00B4AB", "PHP": "#4F5D95", "Ruby": "#701516"}
+def lang_color(name, default="#6f84a6"):
+    return LANG_COLORS.get(name, default) if COLORFUL_LANGUAGES else "#d0d0d0"
+
 SNIPPETS = {
     "Python": ["def build(idea):", "    return ship(idea)"],
     "Swift": ["func build(_ idea: String) {", "    ship(idea)", "}"],
@@ -49,6 +53,28 @@ SNIPPETS = {
     "Shell": ["build() {", "  ship \"$1\"", "}"],
 }
 DEFAULT_SNIPPET = ["// build(idea)", "// ship(idea)"]
+
+
+# ---- black / monochrome theme: every colour used in the SVG templates is remapped here ----
+THEME = {
+    # surfaces
+    "#080d18": "#050505", "#0c1424": "#0b0b0b", "#172236": "#161616", "#24344c": "#2a2a2a",
+    "#1d304b": "#262626", "#213650": "#2a2a2a", "#29364b": "#2a2a2a", "#111c2e": "#141414",
+    # accents (were blue)
+    "#3999df": "#bdbdbd", "#69b8ff": "#ffffff", "#2879bd": "#8a8a8a", "#7668bd": "#d0d0d0",
+    "#8271c7": "#9a9a9a", "#7192bd": "#8f8f8f", "#5d7aa3": "#6b6b6b", "#4a6a94": "#4a4a4a",
+    "#35507a": "#3a3a3a", "#58739c": "#6a6a6a", "#a8c1e6": "#c8c8c8", "#e6eefc": "#ffffff",
+    # text
+    "#93a8c9": "#9a9a9a", "#94a8c7": "#9a9a9a", "#91a5c5": "#8c8c8c", "#6f84a6": "#737373",
+    "#44566f": "#555555", "#c6d4ec": "#d4d4d4", "#e5edfc": "#f2f2f2", "#e8efff": "#f5f5f5",
+    "#f0f5ff": "#ffffff", "#9eb8df": "#a8a8a8",
+}
+
+
+def retheme(text):
+    for old, new in THEME.items():
+        text = text.replace(old, new)
+    return text.replace('stop-color="#8a8a8a" stop-opacity=".35"', 'stop-color="#8a8a8a" stop-opacity=".10"')
 
 esc = lambda s: html.escape(str(s), quote=False)
 
@@ -212,10 +238,17 @@ def calendar_svg(days, private, year, today):
     for c in past:
         streak = streak + 1 if c["count"] > 0 else 0
         longest = max(longest, streak)
+    tail = past[:-1] if past and past[-1]["count"] == 0 else past   # today may still be empty
+    current = 0
+    for c in reversed(tail):
+        if c["count"] > 0:
+            current += 1
+        else:
+            break
     W, H, Y0, PITCH, SZ = 1200, 400, 150, 16, 13
     cols = max(c["col"] for c in days) + 1
     X0 = int((W - cols * PITCH) / 2) + 22
-    COLORS = {"blue": ["#111c2e", "#1d4e89", "#2879bd", "#3999df", "#69b8ff"],
+    COLORS = {"mono": ["#141414", "#3a3a3a", "#6b6b6b", "#a8a8a8", "#ffffff"],
               "github": ["#151b23", "#0e4429", "#006d32", "#26a641", "#39d353"]}[PALETTE]
     MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
     rects, first = [], {}
@@ -254,7 +287,7 @@ def calendar_svg(days, private, year, today):
 <g class="fu" style="animation-delay:1.2s">
 <g fill="#94a8c7" font-size="13" letter-spacing="2"><text x="50" y="335">CONTRIBUTIONS</text><text x="330" y="335">ACTIVE DAYS</text><text x="610" y="335">LONGEST STREAK</text><text x="910" y="335">BEST DAY</text></g>
 <g fill="#e8efff" font-size="35"><text x="50" y="378">{total}</text><text x="330" y="378">{active}</text><text x="610" y="378">{longest}<tspan font-size="14" fill="#94a8c7"> days</tspan></text><text x="910" y="378">{best["count"]}<tspan font-size="14" fill="#94a8c7"> on {best_d}</tspan></text></g></g>'''
-    return frame(W, H, body, css), total
+    return frame(W, H, body, css), dict(total=total, active=active, longest=longest, current=current)
 
 
 # ============================== SVG FRAME =====================================
@@ -314,10 +347,11 @@ def main():
     projects = (others_sorted + [r for r in repos if is_profile(r)])[:MAX_PROJECTS]
 
     # ---- calendar
-    total = None
+    total, cal = None, None
     try:
         days, private = fetch_calendar(today.year, today)
-        cal_svg, total = calendar_svg(days, private, today.year, today)
+        cal_svg, cal = calendar_svg(days, private, today.year, today)
+        total = cal["total"]
         write("contributions.svg", cal_svg)
     except Exception as exc:
         print("calendar skipped:", exc)
@@ -371,7 +405,7 @@ def main():
     counted = sum(len(v) for _, v in top_langs) or 1
     for i, (lname, rs) in enumerate(top_langs):
         x = 48 + i * (cw + gap)
-        col = LANG_COLORS.get(lname, "#6f84a6")
+        col = lang_color(lname)
         per = 2 * (cw - 2 + chh - 2)
         bar_w = cw - 56
         used = short(" · ".join(r["name"] for r in rs), int(bar_w / 8.6))
@@ -404,7 +438,7 @@ def main():
     for i, r in enumerate(projects):
         desc = short(r.get("description") or "No description yet.", 58)
         lang = r.get("language")
-        col = LANG_COLORS.get(lang, "#6f84a6")
+        col = lang_color(lang)
         per = 2 * (W - 2 + H - 2)
         lang_x = 56 + len(lang or "") * 8.4 + 28
         b = f'''<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="15" fill="none" stroke="url(#r)" stroke-width="1.5" stroke-dasharray="180 {per-180}"><animate attributeName="stroke-dashoffset" values="0;-{per}" dur="6s" begin="{i*1.2}s" repeatCount="indefinite"/></rect>
@@ -418,8 +452,6 @@ def main():
         b += (f'<text x="{lang_x if lang else 34:.0f}" y="143" font-size="14" fill="#94a8c7">★ {r.get("stargazers_count", 0)}   forks {r.get("forks_count", 0)}</text>'
               f'<text x="{W-34}" y="143" text-anchor="end" font-size="11" letter-spacing="2" fill="#6f84a6">UPDATED {esc(rel(r["pushed_at"]).upper())}</text>')
         write(f"cards/{re.sub(r'[^A-Za-z0-9._-]', '_', r['name'])}.svg", frame(W, H, b, rx=16, scan=False))
-    write("header-projects.svg", frame(1200, 90, head(1200, "SELECTED PROJECTS", f"{len(projects)} REPOSITORIES · @{esc(login)}", 52), rx=20))
-
     # ---- footer
     W, H = 1200, 220
     pts = []
@@ -433,25 +465,87 @@ def main():
 <text x="{W/2}" y="200" text-anchor="middle" font-size="13" fill="#6f84a6">github.com/{esc(login)}</text>'''
     write("footer.svg", frame(W, H, b, css=".wv{animation:wp 3.5s ease-in-out infinite}@keyframes wp{0%,100%{opacity:.55}50%{opacity:1}}", rx=22))
 
-    # ---- README
-    cards = "\n".join(
-        f'<a href="{esc(r["html_url"])}"><img src="cards/{re.sub(r"[^A-Za-z0-9._-]", "_", r["name"])}.svg" alt="{esc(r["name"])}" width="49%" /></a>'
-        for r in projects)
+    stale = os.path.join(ROOT, "header-projects.svg")
+    if os.path.exists(stale):
+        os.remove(stale)
+
+    # ---- README (native HTML around the images: headings, tables, captions, cache-busting)
+    import hashlib
+
+    def src(f):
+        try:
+            return f + "?v=" + hashlib.sha1(open(os.path.join(ROOT, f), "rb").read()).hexdigest()[:8]
+        except OSError:
+            return f
+
+    def img(f, alt, width="100%"):
+        return f'<img src="{src(f)}" alt="{esc(alt)}" width="{width}" />'
+
+    divider = '<p align="center"><sub>✦ ───────────────────────────── ✦</sub></p>'
+    profile_url = f"https://github.com/{login}"
+    langs_txt = " · ".join(l for l, _ in top_langs) or "Developer"
+    card_files = {r["name"]: re.sub(r"[^A-Za-z0-9._-]", "_", r["name"]) for r in projects}
+    cards = "\n".join(f'<a href="{esc(r["html_url"])}">{img("cards/" + card_files[r["name"]] + ".svg", r["name"], "49%")}</a>'
+                      for r in projects)
+    streak_line = (f'{cal["current"]} day current streak · {cal["active"]} active days · {cal["total"]} contributions in {today.year}'
+                   if cal else "")
     write("README.md", f'''<div align="center">
 
-<img src="hero.svg" alt="{esc(name)} - GitHub profile banner" width="100%" />
+{img("hero.svg", name + " - GitHub profile banner")}
 
-<img src="about.svg" alt="About {esc(name)}" width="100%" />
+<p><strong>{esc(langs_txt)}</strong> · @{esc(login)}</p>
+<p>{esc(bio)}</p>
+<p><a href="{profile_url}">GitHub</a></p>
 
-<img src="stack.svg" alt="Tech stack" width="100%" />
+</div>
 
-<img src="header-projects.svg" alt="Selected projects" width="100%" />
+{divider}
+
+<h2>About</h2>
+
+{img("about.svg", "About " + name)}
+
+<table width="100%">
+<tr>
+<td width="62%" valign="top"><p><strong>Focus:</strong> {esc(langs_txt)}</p><p><sub>{esc(now_txt)}</sub></p></td>
+<td width="38%" valign="top"><p><code>LIVE SIGNAL</code></p><p><strong>{info.get("public_repos", len(repos))}</strong> repos<br /><strong>{stars}</strong> stars<br /><strong>{total if total is not None else "–"}</strong> contributions<br /><strong>{info.get("followers", 0)}</strong> followers</p></td>
+</tr>
+</table>
+
+{divider}
+
+<h2>Tech stack</h2>
+
+{img("stack.svg", "Tech stack")}
+
+<p align="center"><sub>{esc(langs_txt)} · picked from the repos I actually ship</sub></p>
+
+{divider}
+
+<h2>Projects</h2>
+
+<div align="center">
 
 {cards}
 
-<img src="contributions.svg" alt="{esc(name)} GitHub contribution calendar" width="100%" />
+</div>
 
-<img src="footer.svg" alt="Thanks for stopping by" width="100%" />
+{divider}
+
+<h2>Activity</h2>
+
+{img("contributions.svg", name + " GitHub contribution calendar")}
+
+<p align="center"><sub>{esc(streak_line)}</sub></p>
+
+{divider}
+
+<div align="center">
+
+{img("footer.svg", "Thanks for stopping by")}
+
+<p><a href="{profile_url}">GitHub</a></p>
+<p><sub>Auto-updated every 6 hours with a GitHub Action · refreshed {today.strftime("%d %b %Y")}</sub></p>
 
 </div>
 ''')
@@ -462,6 +556,7 @@ def write(rel_path, text):
     path = os.path.join(ROOT, rel_path)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if rel_path.endswith(".svg"):
+        text = retheme(text)
         import xml.dom.minidom as md
         md.parseString(text.encode("utf-8"))  # never write a broken SVG
     open(path, "w", encoding="utf-8").write(text)
